@@ -1,0 +1,27 @@
+{
+  "name": "sp-calendar",
+  "version": "0.0.0",
+  "description": "Experimental port of a jQuery calendar component to Angular 2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kagius/sp-calendar"
+  },
+  "keywords": [
+    "angular2",
+    "calendar",
+    "component"
+  ],
+  "author": "Karl Agius",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/kagius/sp-calendar/issues"
+  },
+  "homepage": "https://github.com/kagius/sp-calendar",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-live-server": "0.0.25",
+    "gulp-sass": "^2.0.4",
+    "gulp-typescript": "^2.8.2"
+  }
+}
