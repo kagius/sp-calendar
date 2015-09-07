@@ -1,0 +1,11 @@
+.calendar
+	table
+		thead
+			tr
+				th <<
+				th(colspan=5) {{activeMonth}}
+				th >>
+		tbody
+			tr(*ng-for="#row of rows")
+				td(*ng-for="#entry of row")
+					{{entry}}

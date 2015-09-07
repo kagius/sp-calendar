@@ -37,7 +37,7 @@ gulp.task('jade', function() {
 	gulp.src(jadeSourcePattern)
 		.pipe(jade({
 			locals: {
-				"stylesheet": properties.output.css + "/style.css"
+				"stylesheet": "styles/style.css"
 			}
 		}))
 		.pipe(gulp.dest(properties.output.html));
@@ -57,7 +57,7 @@ gulp.task("typescript", function () {
         noImplicitAny: true,
         target:"es5",
         module: "commonjs",
-        out: "script.js"
+        experimentalDecorators: true
       }));
   return tsResult.js.pipe(gulp.dest(properties.output.js));
 });
