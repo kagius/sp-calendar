@@ -6,6 +6,12 @@ html(lang="en")
 	body
 		calendar
 		script(src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js")
-		script(src="https://jspm.io/system@0.16.js")
-		script(src="https://code.angularjs.org/2.0.0-alpha.28/angular2.dev.js")
-		script System.import('scripts/calendar')
+		script(src="https://jspm.io/system@0.18.js")
+		script(src="https://code.angularjs.org/2.0.0-alpha.37/angular2.dev.js")
+		script.
+			System.config({
+				map : {
+					'scripts': './scripts'
+				}
+			});
+			System.import('scripts/calendar');

@@ -2,10 +2,11 @@
 	table
 		thead
 			tr
-				th <<
-				th(colspan=5) {{activeMonth}}
-				th >>
+				th(colspan=7)
+					div
+						span <<
+						span {{model.activeMonth | date:'MMMM y'}}
+						span >>			
 		tbody
-			tr(*ng-for="#row of rows")
-				td(*ng-for="#entry of row")
-					{{entry}}
+			tr(*ng-for="#row of model.rows")
+				td(*ng-for="#entry of row", [class.notSameMonth]="entry.date.getMonth() !== model.activeMonth.getMonth()") {{entry.date | date:'dd'}}
