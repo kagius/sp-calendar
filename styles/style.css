@@ -1,0 +1,7 @@
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0; }
+  body .notsamemonth {
+    background-color: #AAA; }

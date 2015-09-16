@@ -1,0 +1,1 @@
+<div class="calendar"><table><thead><tr><th colspan="7"><div><span><<</span><span>{{model.activeMonth | date:'MMMM y'}}</span><span>>>			</span></div></th></tr></thead><tbody><tr *ng-for="#row of model.rows"><td *ng-for="#entry of row" [class.notSameMonth]="entry.date.getMonth() !== model.activeMonth.getMonth()">{{entry.date | date:'dd'}}</td></tr></tbody></table></div>
